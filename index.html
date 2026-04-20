@@ -6,26 +6,45 @@
     <title>Structured Restoration | 24/7 Emergency Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            --brand-dark: #111111;
+            --brand-red: #c62828;
+            --brand-red-dark: #8e1b1b;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('technician-work.jpg'); /* Replace with your image */
+            background: linear-gradient(rgba(12, 17, 23, 0.6), rgba(12, 17, 23, 0.65)), url('images/2025-11-17.webp');
             background-size: cover;
             background-position: center;
-            height: 80vh;
+            min-height: 78vh;
             display: flex;
             align-items: center;
-            color: white;
+            color: #ffffff;
+        }
+        .navbar-brand {
+            letter-spacing: 0.04em;
         }
         .btn-emergency {
-            background-color: #dc3545;
-            color: white;
-            font-weight: bold;
-            padding: 15px 30px;
-            border-radius: 5px;
+            background-color: var(--brand-red);
+            border-color: var(--brand-red);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 12px 24px;
             text-transform: uppercase;
         }
         .btn-emergency:hover {
-            background-color: #b02a37;
-            color: white;
+            background-color: var(--brand-red-dark);
+            border-color: var(--brand-red-dark);
+            color: #ffffff;
+        }
+        .feature-card {
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+            height: 100%;
         }
     </style>
 </head>
@@ -33,16 +52,16 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand font-weight-bold" href="#">STRUCTURED RESTORATION</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="index.html">STRUCTURED RESTORATION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About & Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
                 </ul>
             </div>
         </div>
@@ -50,11 +69,43 @@
 
     <header class="hero-section">
         <div class="container text-center">
-            <h1 class="display-3 fw-bold">Disaster Strikes Fast. <br>We Respond Faster.</h1>
-            <p class="lead mb-4">Professional Water, Fire, and Mold Restoration available 24/7.</p>
+            <h1 class="display-4 fw-bold">Disaster Strikes Fast. We Respond Faster.</h1>
+            <p class="lead mb-4">Professional water, fire, and mold restoration with rapid response, clear communication, and dependable results.</p>
             <a href="tel:18007878287" class="btn btn-emergency btn-lg">Emergency? Call Now</a>
         </div>
     </header>
+
+    <main class="py-5">
+        <section class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <h2 class="h5 fw-bold">Water Mitigation</h2>
+                        <p class="mb-0">Fast extraction, structural drying, and moisture control to minimize downtime and prevent secondary loss.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <h2 class="h5 fw-bold">Fire Restoration</h2>
+                        <p class="mb-0">Soot cleanup, odor treatment, and strategic restoration planning to safely recover damaged properties.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <h2 class="h5 fw-bold">Mold Remediation</h2>
+                        <p class="mb-0">Targeted containment and remediation processes that restore healthy indoor environments quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0">&copy; 2026 Structured Restoration</p>
+            <p class="mb-0">Available 24/7 | <a class="link-light" href="tel:18007878287">(800) 787-8287</a></p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

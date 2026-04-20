@@ -1,34 +1,87 @@
-/* Custom Stylesheet for Scratch Page */
 body {
-    background-color: #f0f2f5; /* Custom background color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Custom font family */
-    color: #2c3e50; /* Custom font color */
+    margin: 0;
+    background: linear-gradient(180deg, #edf2f7 0%, #dfe7ef 100%);
+    font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+    color: #1f2933;
     line-height: 1.6;
 }
 
+.scratch-nav {
+    background: #111827;
+    padding: 14px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.scratch-nav a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.scratch-nav a:hover {
+    color: #fca5a5;
+}
+
 #main-container {
-    width: 80%;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border: 1px solid #ddd;
+    max-width: 1040px;
+    margin: 30px auto;
+    padding: 0 16px 30px;
+}
+
+.content-block {
+    background-color: #ffffff;
+    border: 1px solid #d8dee7;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+}
+
+.intro-block h1,
+.content-block h2 {
+    color: #111827;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 10px;
+    border: 1px solid #ccd3dc;
 }
 
 .sales-box {
-    background-color: #e9ecef;
-    padding: 20px;
-    margin: 20px 0;
-    border-left: 5px solid #000;
+    border-left: 6px solid #b91c1c;
 }
 
-.app-container {
-    background-color: #ffffff;
-    border: 2px solid #333;
-    padding: 25px;
+.media-block .video-frame {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.media-block iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
     border-radius: 10px;
-    margin-top: 40px;
 }
 
-h1, h2 {
-    color: #333;
+.primary-button {
+    display: inline-block;
+    background: #b91c1c;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    background: #8f1717;
 }

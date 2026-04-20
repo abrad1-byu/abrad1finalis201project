@@ -2,59 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>B2B Sales Insights & Restoration Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Page | Restoration Operations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav style="padding: 20px; background: #333; color: white;">
-        <a href="#sales-content" style="color: white;">Sales Strategy</a> | 
-        <a href="#estimator-app" style="color: white;">Cost Estimator App</a> |
-        <a href="index.html" style="color: white;">Back to Professional Site</a>
+    <div id="top-anchor"></div>
+
+    <nav class="scratch-nav">
+        <a href="#process-section">Jump to Process</a>
+        <a href="#tableau-section">Jump to Tableau</a>
+        <a href="app.html">Open Interactive App</a>
+        <a href="index.html">Back to Professional Site</a>
     </nav>
 
     <div id="main-container">
-        <h1>B2B Sales & Restoration Logistics</h1>
-        <p>Exploring the intersection of business development and emergency disaster recovery.</p>
+        <div class="content-block intro-block">
+            <h1>B2B Restoration Response Strategy</h1>
+            <p>
+                This scratch page explores how restoration teams can build stronger partnerships with facility managers
+                through faster response, clearer communication, and reliable project execution.
+            </p>
+            <img src="images/2025-12-19.webp" alt="Restoration field response" class="hero-image">
+        </div>
 
-        <img src="https://lh3.googleusercontent.com/p/AF1QipNjyOZFAVKPIV4vDF6HYCSW8fWg1yUP0D23mBAl=s1360-w1360-h1020-rw" alt="B2B Sales Concept" style="width:100%; max-width:600px;">
-
-        <div id="sales-content" class="sales-box">
-            <h2>Key Milestones in B2B Success</h2>
-            
+        <div id="process-section" class="content-block sales-box">
+            <h2>Partnership Development Process</h2>
             <ol>
-                <li><strong>Prospecting Phase</strong>
+                <li><strong>Prospecting and Qualification</strong>
                     <ul>
-                        <li>Identifying high-value commercial properties</li>
-                        <li>Researching decision-makers (Facility Managers)</li>
+                        <li>Identify properties with frequent water-loss exposure.</li>
+                        <li>Map decision-makers and response expectations.</li>
                     </ul>
                 </li>
-                <li><strong>The Discovery Call</strong>
+                <li><strong>Discovery Conversations</strong>
                     <ul>
-                        <li>Understanding pain points and response times</li>
-                        <li>Evaluating current vendor gaps</li>
+                        <li>Understand service gaps in current vendor relationships.</li>
+                        <li>Define communication cadence and escalation paths.</li>
                     </ul>
                 </li>
-                <li><strong>Closing the Partnership</strong></li>
+                <li><strong>Launch and Performance Tracking</strong>
+                    <ul>
+                        <li>Deploy response protocol and document SLAs.</li>
+                        <li>Review claim trends and adjust staffing models.</li>
+                    </ul>
+                </li>
             </ol>
         </div>
 
-        <h3>Industry Strategy Video</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rp2CuNyk6So?si=2BexAfcTtJZ8W7qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="content-block media-block">
+            <h2>Industry Learning Video</h2>
+            <div class="video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/rp2CuNyk6So?si=2BexAfcTtJZ8W7qw"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
 
-        <hr>
-
-        <h3>Property Insurance Claims Analysis</h3>
-        <div id="tableau-viz">
+        <div id="tableau-section" class="content-block tableau-wrap">
+            <h2>Live Tableau: Property Insurance Claims Analysis</h2>
             <div class='tableauPlaceholder' id='viz1713130000000' style='position: relative'>
-                <noscript><a href='#'><img alt='Claims Dashboard' src='https://public.tableau.com/static/images/Ta/Tableau-ClaimsDashboard/ClaimsDashboard/1_rss.png' style='border: none' /></a></noscript>
-                <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='embed_code_version' value='3' /> 
+                <noscript><a href='https://public.tableau.com/views/Tableau-ClaimsDashboard/ClaimsDashboard?:showVizHome=no'><img alt='Claims Dashboard' src='https://public.tableau.com/static/images/Ta/Tableau-ClaimsDashboard/ClaimsDashboard/1.png' style='border: none' /></a></noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
                     <param name='site_root' value='' />
-                    <param name='name' value='Tableau-ClaimsDashboard&#47;ClaimsDashboard' />
-                    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Tableau-ClaimsDashboard&#47;ClaimsDashboard&#47;1.png' /> 
+                    <param name='name' value='Tableau-ClaimsDashboard/ClaimsDashboard' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Ta/Tableau-ClaimsDashboard/ClaimsDashboard/1.png' />
                     <param name='animate_transition' value='yes' />
                     <param name='display_static_image' value='yes' />
                     <param name='display_spinner' value='yes' />
@@ -64,52 +85,24 @@
                     <param name='filter' value='publish=yes' />
                 </object>
             </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1713130000000');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                var scriptElement = document.createElement('script');
+            <script>
+                const divElement = document.getElementById('viz1713130000000');
+                const vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                const scriptElement = document.createElement('script');
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                 divElement.parentNode.insertBefore(scriptElement, divElement);
             </script>
         </div>
 
-        <hr>
-
-        <div id="estimator-app" class="app-container">
-            <h2>Restoration Cost Estimator</h2>
-            <p>Estimate the mitigation cost for B2B clients instantly.</p>
-            
-            <label for="sqft">Square Footage:</label>
-            <input type="number" id="sqft" placeholder="e.g. 500"><br><br>
-
-            <label for="damageType">Damage Type:</label>
-            <select id="damageType">
-                <option value="4">Clean Water ($4/sqft)</option>
-                <option value="7">Fire/Smoke ($7/sqft)</option>
-                <option value="15">Mold/Black Water ($15/sqft)</option>
-            </select><br><br>
-
-            <button onclick="calculateCost()" style="background: #dc3545; color: white; padding: 10px; border: none; cursor: pointer;">Calculate Estimate</button>
-            
-            <h3 id="result" style="margin-top: 20px; color: #dc3545;"></h3>
+        <div class="content-block app-link-block">
+            <h2>Small Web App</h2>
+            <p>The interactive app is on its own single page, as required.</p>
+            <a class="primary-button" href="app.html">Launch the Response Cost Simulator</a>
+            <p><a href="#top-anchor">Back to top</a></p>
         </div>
     </div>
-
-    <script>
-        function calculateCost() {
-            const sqft = document.getElementById('sqft').value;
-            const rate = document.getElementById('damageType').value;
-            const resultDisplay = document.getElementById('result');
-
-            if(sqft > 0) {
-                const total = sqft * rate;
-                resultDisplay.innerText = "Estimated Mitigation Cost: $" + total.toLocaleString();
-            } else {
-                resultDisplay.innerText = "Please enter a valid square footage.";
-            }
-        }
-    </script>
 
 </body>
 </html>
